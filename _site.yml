@@ -9,7 +9,7 @@ navbar:
       href: mailto:<826515211@qq.com>
     - icon: fa-github fa-lg
       href: https://github.com/jiying-han/
-    - icon: fa-book-reader
+    - icon: fas fa-book-open
       href: https://bookdown.org/yihui/rmarkdown/
 output:
   html_document:
