@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -107,33 +108,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .dropdown-submenu {
   position: relative;
@@ -250,6 +251,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -356,14 +360,20 @@ div.tocify {
   <a href="about.html">About</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
+  <a href="mailto:&lt;826515211@qq.com&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="https://github.com/jiying-han/">
     <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://bookdown.org/yihui/rmarkdown/">
+    <span class="fa fa-book-reader"></span>
      
   </a>
 </li>
@@ -373,6 +383,14 @@ div.tocify {
 </div><!--/.navbar -->
 
 <div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
 
 
 
@@ -387,15 +405,18 @@ div.tocify {
 </div>
 <div id="welcome-to-see-my-hometown---shijiazhuang-china" class="section level1">
 <h1>Welcome to see my hometown - Shijiazhuang, China</h1>
-<p>This is my hometown – Shijiazhuang. Shijiazhuang formerly known as Shimen and romanized as Shihkiachwang, is the capital and largest city of North China’s Hebei Province. Administratively a prefecture-level city, it is about 266 kilometres southwest of Beijing, and it administers eight districts, two county-level cities, and 12 counties. <img src="image/shijiazhuang.jpg" style="width:75%"></p>
+<p>This is my hometown – Shijiazhuang. Shijiazhuang formerly known as Shimen and romanized as Shihkiachwang, is the capital and largest city of North China’s Hebei Province. Administratively a prefecture-level city, it is about 266 kilometres southwest of Beijing, and it administers eight districts, two county-level cities, and 12 counties.</p>
+<p><img src="image/shijiazhuang.jpg" style="width:75%"></p>
 </div>
 <div id="welcome-to-see-my-university---columbia-university-us" class="section level1">
 <h1>Welcome to see my university - Columbia University, US</h1>
-<p>Columbia University is a private Ivy League research university in New York City. Established in 1754 on the grounds of Trinity Church in Manhattan, Columbia is the oldest institution of higher education in New York and the fifth-oldest institution of higher learning in the United States. <img src="image/columbia.jpg" style="width:75%"></p>
+<p>Columbia University is a private Ivy League research university in New York City. Established in 1754 on the grounds of Trinity Church in Manhattan, Columbia is the oldest institution of higher education in New York and the fifth-oldest institution of higher learning in the United States.</p>
+<p><img src="image/columbia.jpg" style="width:75%"></p>
 </div>
 <div id="welcome-to-see-my-pet---corgi-biki" class="section level1">
 <h1>Welcome to see my pet - Corgi Biki</h1>
-<p>I will show my pet’s picture to express my love to him. Here is my dog Biki, he is just one year old, and he just like a girl who is so shy but he loves playing with his friends! <img src="image/biki.jpg" style="width:75%"></p>
+<p>I will show my pet’s picture to express my love to him. Here is my dog Biki, he is just one year old, and he just like a girl who is so shy but he loves playing with his friends!</p>
+<p><img src="image/biki.jpg" style="width:75%"></p>
 </div>
 <div id="link-to-page-within-the-site" class="section level1">
 <h1>Link to page within the site</h1>
@@ -439,6 +460,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
 <script>
 $(document).ready(function ()  {

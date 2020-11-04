@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -107,33 +108,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .dropdown-submenu {
   position: relative;
@@ -250,6 +251,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -367,12 +371,26 @@ div.tocify {
      
   </a>
 </li>
+<li>
+  <a href="https://bookdown.org/yihui/rmarkdown/">
+    <span class="fa fa-book-reader"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
 <div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
 
 
 
@@ -381,12 +399,55 @@ div.tocify {
 </div>
 
 
-<div id="this-page-has-information-about-me" class="section level1">
-<h1>This page has information about me</h1>
+<div id="briefly-introduction" class="section level2">
+<h2>Briefly introduction</h2>
 <p>I am currently a biostatstic student in Columbia Mailman school of public health. This is my first year. And we have for subjects – Data science, Biostatistcal Method, Probability, Principle of epidemiology. Of course, data science is my favorite!</p>
-<p>Problem 1</p>
-<p>A page giving your academic and professional experience (i.e. a resume) Links in the site navigation for your GitHub account, your email, and other professional networks.</p>
-<p>It’s my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from <a href="https://p8105.com/">p8105</a></p>
+</div>
+<div id="experience" class="section level2 tabset">
+<h2>Experience</h2>
+<div id="academic-experience" class="section level3">
+<h3>Academic experience</h3>
+<ul>
+<li><em>Study on the Function of F3H Gene in Color Difference of Hydrangea Changsha, China Undergraduate Researcher-Professor Jiqing Peng 07/2018-06/2019</em></li>
+</ul>
+<p>⚫ Responsible for Hydrangea’s F3H gene cloning, its functional verification and plant tissue culture</p>
+<p>⚫ Carried out the bioinformatics analysis on Hydrangea’s F3H gene and obtained the full-length cDNA sequence and deduced the amino acid sequence</p>
+<p>⚫ Conducted the bioinformatics analysis upon F3H coding protein showing F3H belonged to hydrophilic protein</p>
+<p>⚫ Compared the homologous sequences of amino acids and made clustering analysis</p>
+<ul>
+<li><em>Germplasm Resources Off-site Conservation and Germplasm Innovation of Magnolia Plants Changsha, China Undergraduate Researcher-Professor Jiqing Peng 07/2018</em></li>
+</ul>
+<p>⚫ Conducted ISSR analysis of magnolia leaves- DNA extraction and quality detection</p>
+<p>⚫ Adopted the Improved CTAB Method, Kit Method and CTAB Method to extract DNA and got different extraction quality</p>
+<ul>
+<li><em>Differences in Gene &amp; Protein Expression in Seed Germination of Zanthoxylum Dissitum by National Natural Science Foundation of China Changsha, China Undergraduate Researcher-Professor Jikang Sun 07/2017</em></li>
+</ul>
+<p>⚫ Dealt with the content of reducing sugar, malondialdehyde and lipase in different periods with GA</p>
+</div>
+<div id="professional-experience" class="section level3">
+<h3>Professional experience</h3>
+<ul>
+<li><em>Clinical Biobank of The First Hospital of Hebei Medial University Shijiazhuang, China Assistant Researcher 09/2019- 08/2020</em></li>
+</ul>
+<p>⚫ Collect and summarize cohort studies of CVD and related papers on obstructive sleep breathing syndrome and report on a weekly basis</p>
+<p>⚫ Compile relevant data of patients with obstructive sleep respiratory syndrome and assist follow-up</p>
+<p>⚫ Participate in assisting the annual meeting of the Beijing-Tianjin-Hebei Biobank Association</p>
+<p>⚫ Assistant with the EHR construction of The First Hospital of Hebei Medial University</p>
+<p>⚫ Responsible for communicating with the contributing magazine and follow-up matters Project clinical research registration Assist the scientific research department of the hospital in daily work</p>
+<ul>
+<li><em>Pilot Test Base of Hunan Biopharmaceutical Co., Ltd Changsha, China Visiting Intern 10/2018</em></li>
+</ul>
+<p>⚫ Visited the Pilot Test Base to understand the production line of the pilot fermentation workshop including the pre-culture and fermentation in the early stage, and drying, granulation and packaging in the later stage</p>
+<p>⚫ Further understood the structure and control of the fermentation tank, as well as the fermentation system</p>
+<ul>
+<li><em>Sany Heavy Industry Co., Ltd Changsha, China Executive Assistant of International Headquarter 06/2019-09/2019</em></li>
+</ul>
+<p>⚫ Responsible for receiving and organizing important international government officials and entrepreneurs</p>
+<p>⚫Collected and sorted out relevant information of international headquarters and group high-level meetings ⚫ Contacted Domestic and Foreign Chambers of Commerce, an arranged the visit and conference</p>
+<p>⚫ Wrote business letters and made presentations based on specific business plans and progress</p>
+<p>⚫ Formulated the leader’s itinerary plan, followed up and supervised the work of the department</p>
+<p>other professional networks.</p>
+</div>
 </div>
 
 
@@ -424,6 +485,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
 <script>
 $(document).ready(function ()  {

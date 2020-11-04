@@ -4,26 +4,73 @@ output:
   html_document:
     toc: true
     toc_float: true
+    code_folding: hide
 ---
-# This page has information about me
+## Briefly introduction
 
 I am currently a biostatstic student in Columbia Mailman school of public health. This is my first year. And we have for subjects -- Data science, Biostatistcal Method, Probability, Principle of epidemiology. Of course, data science is my favorite!
 
 
+## Experience {.tabset}
 
-Problem 1
+### Academic experience
+* _Study on the Function of F3H Gene in Color Difference of Hydrangea Changsha, China Undergraduate Researcher-Professor Jiqing Peng 07/2018-06/2019_
+
+⚫ Responsible for Hydrangea’s F3H gene cloning, its functional verification and plant tissue culture 
+
+⚫ Carried out the bioinformatics analysis on Hydrangea’s F3H gene and obtained the full-length cDNA sequence and deduced the amino acid sequence 
+
+⚫ Conducted the bioinformatics analysis upon F3H coding protein showing F3H belonged to hydrophilic protein 
+
+⚫ Compared the homologous sequences of amino acids and made clustering analysis 
+
+* _Germplasm Resources Off-site Conservation and Germplasm Innovation of Magnolia Plants Changsha, China Undergraduate Researcher-Professor Jiqing Peng 07/2018_ 
+
+⚫ Conducted ISSR analysis of magnolia leaves- DNA extraction and quality detection 
+
+⚫ Adopted the Improved CTAB Method, Kit Method and CTAB Method to extract DNA and got different extraction quality 
+
+* _Differences in Gene & Protein Expression in Seed Germination of Zanthoxylum Dissitum by National Natural Science Foundation of China Changsha, China Undergraduate Researcher-Professor Jikang Sun 07/2017_
+
+⚫ Dealt with the content of reducing sugar, malondialdehyde and lipase in different periods with GA
 
 
-A page giving your academic and professional experience (i.e. a resume)
-Links in the site navigation for your GitHub account, your email, and other professional networks.
+### Professional experience
+* _Clinical Biobank of The First Hospital of Hebei Medial University Shijiazhuang, China Assistant Researcher 09/2019- 08/2020_ 
+
+⚫ Collect and summarize cohort studies of CVD and related papers on obstructive sleep breathing syndrome and report on a weekly basis 
+
+⚫ Compile relevant data of patients with obstructive sleep respiratory syndrome and assist follow-up 
+
+⚫ Participate in assisting the annual meeting of the Beijing-Tianjin-Hebei Biobank Association 
+
+⚫ Assistant with the EHR construction of The First Hospital of Hebei Medial University 
+
+⚫ Responsible for communicating with the contributing magazine and follow-up matters Project clinical research registration Assist the scientific research department of the hospital in daily work 
+
+* _Pilot Test Base of Hunan Biopharmaceutical Co., Ltd Changsha, China Visiting Intern 10/2018_ 
+
+⚫ Visited the Pilot Test Base to understand the production line of the pilot fermentation workshop including the pre-culture and fermentation in the early stage, and drying, granulation and packaging in the later stage 
+
+⚫ Further understood the structure and control of the fermentation tank, as well as the fermentation system 
+
+* _Sany Heavy Industry Co., Ltd Changsha, China Executive Assistant of International Headquarter 06/2019-09/2019_
+
+⚫ Responsible for receiving and organizing important international government officials and entrepreneurs 
+
+⚫Collected and sorted out relevant information of international headquarters and group high-level meetings 
+⚫ Contacted Domestic and Foreign Chambers of Commerce, an arranged the visit and conference 
+
+⚫ Wrote business letters and made presentations based on specific business plans and progress 
+
+⚫ Formulated the leader’s itinerary plan, followed up and supervised the work of the department
 
 
 
+ other professional networks.
 
 
 
-
-It's my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from [p8105](https://p8105.com/)
 
 
 
