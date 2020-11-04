@@ -1,0 +1,31 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+# This page has information about me
+
+I am currently a biostatstic student in Columbia Mailman school of public health. This is my first year. And we have for subjects -- Data science, Biostatistcal Method, Probability, Principle of epidemiology. Of course, data science is my favorite!
+
+
+
+Problem 1
+
+A brief introductory landing page
+A page giving your academic and professional experience (i.e. a resume)
+Links in the site navigation for your GitHub account, your email, and other professional networks.
+
+
+
+
+
+
+
+It's my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from [p8105](https://p8105.com/)
+
+
+
+

@@ -1,0 +1,28 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Jiying's awesome website
+
+This is my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from [p8105](https://p8105.com/)
+
+
+I will show my pet's picture to express my love to him. Here is my dog, Biki:
+<img src="image/biki.jpg" style="width:75%">
+
+
+# Link to page within the site
+* [About me](about.html)
+
+Problem 1
+
+A brief introductory landing page
+A page giving your academic and professional experience (i.e. a resume)
+Links in the site navigation for your GitHub account, your email, and other professional networks.
+
+
