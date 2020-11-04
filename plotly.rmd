@@ -1,0 +1,39 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+## Plots of problem 2
+
+```{r message=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("instacart")
+```
+
+
+```{r message=FALSE, }
+instacart = 
+ instacart  
+```
+
+### scatterplot
+```{r message=FALSE}
+instacart 
+```
+
+### boxplot
+```{r message=FALSE}
+
+```
+
+### barchart
+```{r message=FALSE}
+
+```
+

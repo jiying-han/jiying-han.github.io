@@ -11,7 +11,7 @@
 
 
 
-<title>My awesome website</title>
+<title>Plotly</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -397,31 +397,45 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">My awesome website</h1>
+<h1 class="title toc-ignore">Plotly</h1>
 
 </div>
 
 
-<div id="welcome-to-jiyings-website" class="section level1">
-<h1>Welcome to Jiying’s website</h1>
-<p>This is my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from <a href="https://p8105.com/">p8105</a></p>
+<div id="plots-of-problem-2" class="section level2">
+<h2>Plots of problem 2</h2>
+<pre class="r"><code>library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data(&quot;instacart&quot;)</code></pre>
+<pre class="r"><code>instacart = 
+ instacart  </code></pre>
+<div id="scatterplot" class="section level3">
+<h3>scatterplot</h3>
+<pre class="r"><code>instacart </code></pre>
+<pre><code>## # A tibble: 1,384,617 x 15
+##    order_id product_id add_to_cart_ord… reordered user_id eval_set order_number
+##       &lt;int&gt;      &lt;int&gt;            &lt;int&gt;     &lt;int&gt;   &lt;int&gt; &lt;chr&gt;           &lt;int&gt;
+##  1        1      49302                1         1  112108 train               4
+##  2        1      11109                2         1  112108 train               4
+##  3        1      10246                3         0  112108 train               4
+##  4        1      49683                4         0  112108 train               4
+##  5        1      43633                5         1  112108 train               4
+##  6        1      13176                6         0  112108 train               4
+##  7        1      47209                7         0  112108 train               4
+##  8        1      22035                8         1  112108 train               4
+##  9       36      39612                1         0   79431 train              23
+## 10       36      19660                2         1   79431 train              23
+## # … with 1,384,607 more rows, and 8 more variables: order_dow &lt;int&gt;,
+## #   order_hour_of_day &lt;int&gt;, days_since_prior_order &lt;int&gt;, product_name &lt;chr&gt;,
+## #   aisle_id &lt;int&gt;, department_id &lt;int&gt;, aisle &lt;chr&gt;, department &lt;chr&gt;</code></pre>
 </div>
-<div id="welcome-to-see-my-hometown---shijiazhuang-china" class="section level1">
-<h1>Welcome to see my hometown - Shijiazhuang, China</h1>
-<p>This is my hometown – Shijiazhuang. Shijiazhuang formerly known as Shimen and romanized as Shihkiachwang, is the capital and largest city of North China’s Hebei Province. Administratively a prefecture-level city, it is about 266 kilometres southwest of Beijing, and it administers eight districts, two county-level cities, and 12 counties.</p>
-<p><img src="image/shijiazhuang.jpg" style="width:75%"></p>
+<div id="boxplot" class="section level3">
+<h3>boxplot</h3>
 </div>
-<div id="welcome-to-see-my-university---columbia-university-us" class="section level1">
-<h1>Welcome to see my university - Columbia University, US</h1>
-<p>Columbia University is a private Ivy League research university in New York City. Established in 1754 on the grounds of Trinity Church in Manhattan, Columbia is the oldest institution of higher education in New York and the fifth-oldest institution of higher learning in the United States.</p>
-<p><img src="image/columbia.jpg" style="width:75%"></p>
+<div id="barchart" class="section level3">
+<h3>barchart</h3>
 </div>
-<div id="welcome-to-see-my-pet---corgi-biki" class="section level1">
-<h1>Welcome to see my pet - Corgi Biki</h1>
-<p>I will show my pet’s picture to express my love to him. Here is my dog Biki, he is just one year old, and he just like a girl who is so shy but he loves playing with his friends!</p>
-<p><img src="image/biki.jpg" style="width:75%"></p>
-<p>problem 2 Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:</p>
-<p>Instacart NY NOAA NYC Restaurant Inspections These datasets are large; you may want / need to filter or randomly sample from the complete dataset to ensure a reasonable product.</p>
 </div>
 
 
