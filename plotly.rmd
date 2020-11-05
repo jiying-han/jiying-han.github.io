@@ -18,7 +18,8 @@ data("instacart")
 ```
 
 
-### scatterplot
+
+### Scatterplot
 ```{r message=FALSE}
  instacart %>% 
   select(product_id,user_id,aisle,product_name) %>% 
@@ -30,7 +31,11 @@ data("instacart")
 ```
 
 
-### boxplot
+
+
+
+
+### Boxplot
 ```{r warning=FALSE}
 instacart %>% 
   select(aisle,product_name,order_dow,order_hour_of_day) %>%
@@ -44,7 +49,12 @@ instacart %>%
   )
 ```
 
-### barchart
+
+
+
+
+
+### Barchart
 ```{r message=FALSE}
  instacart %>% 
   count(aisle) %>% 

@@ -4,33 +4,22 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source: embed
 ---
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
 library(flexdashboard)
+data("instacart")
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
-
-### Scatterplot
-
-```{r}
-instacart %>% 
-  select(product_id,user_id,aisle,product_name) %>% 
-  filter(aisle == "skin care") %>% 
-  mutate(text_labels = str_c("Aisle: ", aisle,"User ID: ",user_id )) %>% 
-  plot_ly(
-    x = ~product_name, y = ~product_id, type = "scatter", mode = "markers",
-    color = ~product_name, alpha = 0.5, colors = "viridis",text = ~text_labels)
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
 ### Boxplot
 
-```{r}
+```{r warning=FALSE}
 instacart %>% 
   select(aisle,product_name,order_dow,order_hour_of_day) %>%
   mutate(product_name = fct_reorder(product_name, order_hour_of_day)) %>% 
@@ -43,9 +32,25 @@ instacart %>%
   )
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Scatterplot
+
+```{r warning=FALSE}
+instacart %>% 
+  select(product_id,user_id,aisle,product_name) %>% 
+  filter(aisle == "skin care") %>% 
+  mutate(text_labels = str_c("Aisle: ", aisle,"User ID: ",user_id )) %>% 
+  plot_ly(
+    x = ~product_name, y = ~product_id, type = "scatter", mode = "markers",
+    color = ~user_id, alpha = 0.5, colors = "viridis",text = ~text_labels)
+```
+
+
 ### Barchart
 
-```{r}
+```{r warning=FALSE}
 instacart %>% 
   count(aisle) %>% 
   filter(n > 10000) %>% 
