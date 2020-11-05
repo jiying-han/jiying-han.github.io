@@ -9,7 +9,7 @@ output:
 
 # Welcome to Jiying's website
 
-This is my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize three dataset from [p8105](https://p8105.com/)
+This is my first website in my life. And in this website, you will see some introduction about myself. Apart from that, I will visualize a dataset from [p8105](https://p8105.com/)
 
 # Welcome to see my hometown - Shijiazhuang, China
 
@@ -31,14 +31,6 @@ I will show my pet's picture to express my love to him. Here is my dog Biki, he 
 
 
 
-
-problem 2
-Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
-
-Instacart
-NY NOAA
-NYC Restaurant Inspections
-These datasets are large; you may want / need to filter or randomly sample from the complete dataset to ensure a reasonable product.
 
 
 
