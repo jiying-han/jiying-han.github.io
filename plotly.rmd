@@ -17,23 +17,4 @@ data("instacart")
 ```
 
 
-```{r message=FALSE, }
-instacart = 
- instacart  
-```
-
-### scatterplot
-```{r message=FALSE}
-instacart 
-```
-
-### boxplot
-```{r message=FALSE}
-
-```
-
-### barchart
-```{r message=FALSE}
-
-```
 
